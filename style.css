@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+
+
+/*perintah untuk memanggil font eksternal*/
+
+@font-face {
+    font-family: 'c';
+    src: url('font/SummerFont-Light.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'c1';
+    src: url('font/SummerFont-Light.otf');
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'd';
+    src: url('font/Junction-light.otf');
+    font-display: swap;
+}
+
+
+body {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    height: auto;
+}
+
+.wrapper {
+
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #ff6296 10%, #9a3ce7 40%, #23A6D5 70%, #28beebdc 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+
+}
+
+
+.time {
+    font-family: 'c1';
+    font-size: 120px;
+    color: #fff;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.txtberjalan {
+    font-family: 'c';
+    text-transform: lowercase;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: .7mm;
+    color: #fff;
+
+}
+
+.tanggal {
+    font-family: 'd';
+    text-transform: capitalize;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-style: italic;
+    color: #fff;
+
+}
+
+.author {
+    font-family: 'd';
+    text-transform: lowercase;
+    position: absolute;
+    top: 4%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-style: italic;
+    color: #fff;
+
+}
+
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(225, 225, 225, 1);
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+}
+
+
+
+
+.bulat {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.bulat span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 6s linear infinite;
+}
+
+.bulat:hover span:nth-child(1) {
+
+    background: rgba(0, 0, rgb(53, 212, 212), 1);
+}
+
+.bulat span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate3 4s linear infinite;
+}
+
+.bulat:hover span:nth-child(2) {
+
+    background: rgba(#4febc6, rgb(74, 171, 228), rgb(53, 212, 212), 1);
+}
+
+.bulat span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 7s linear infinite;
+}
+
+.bulat:hover span:nth-child(3) {
+
+    background: rgba(#4febc6, rgb(74, 171, 228), rgb(53, 212, 212), 1);
+}
+
+.bulat span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate3 8s linear infinite;
+}
+
+.bulat:hover span:nth-child(4) {
+
+    background: rgba(0, 0, rgb(53, 212, 212), 1);
+}
+
+.bulat span:nth-child(5) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.bulat:hover span:nth-child(5) {
+
+    background: rgba(0, 0, rgb(53, 212, 212), 1);
+}
+
+.isi {
+    font-size: 34px;
+    text-transform: capitalize;
+    position: relative;
+    padding: 40px 60px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+    font-family: 'd';
+}
+
+.isi:hover {
+    font-size: 30px;
+    color: salmon;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .tanggal {
+        font-size: 20px;
+    }
+
+    .txtberjalan {
+        width: 75%;
+        top: 84%;
+        font-size: 49px;
+    }
+
+    .bulat {
+        width: 400px;
+        height: 400px;
+        top: 57%;
+    }
+
+    .isi {
+        font-family: 'd';
+        font-size: 30px;
+    }
+
+    .time {
+        top: 19%;
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 810px) {
+    .tanggal {
+        font-size: 17px;
+    }
+
+    .txtberjalan {
+        width: 75%;
+        top: 88%;
+        font-size: 49px;
+    }
+
+    .bulat {
+        width: 300px;
+        height: 300px;
+        top: 60%;
+    }
+
+    .isi {
+        font-family: 'd';
+        font-size: 30px;
+    }
+
+    .time {
+        top: 17%;
+        font-size: 100px;
+    }
+}
+
+@media (max-height: 657px) {
+    .tanggal {
+        font-size: 17px;
+    }
+
+    .txtberjalan {
+        width: 75%;
+        top: 88%;
+        font-size: 49px;
+    }
+
+    .bulat {
+        width: 300px;
+        height: 300px;
+        top: 60%;
+    }
+
+    .isi {
+        font-family: 'd';
+        font-size: 30px;
+    }
+
+    .time {
+        top: 17%;
+        font-size: 100px;
+    }
+}
+
+@media (max-width:500px) {
+    .tanggal {
+        font-size: 16px;
+    }
+
+    .txtberjalan {
+        top: 82%;
+        width: 75%;
+        font-size: 30px;
+    }
+
+    .bulat {
+        width: 290px;
+        height: 290px;
+        top: 57%;
+    }
+
+    .isi {
+        font-family: 'd';
+        font-size: 22px;
+    }
+
+    .time {
+        top: 19%;
+        font-size: 110px;
+    }
+}
+
+@media (max-width:360px) {
+    .tanggal {
+        top: 5%;
+        font-size: 15px;
+    }
+
+    .txtberjalan {
+        top: 77%;
+        width: 75%;
+        font-size: 24px;
+    }
+
+    .bulat {
+        width: 220px;
+        height: 220px;
+        top: 52%;
+    }
+
+    .isi {
+        font-size: 18px;
+        font-family: 'd';
+    }
+
+    .time {
+        top: 15%;
+        font-size: 80px;
+    }
+}
