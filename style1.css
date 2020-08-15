@@ -12,20 +12,17 @@
 @font-face {
     font-family: 'c';
     src: url('font/SummerFont-Light.otf');
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'c1';
     src: url('font/SummerFont-Light.otf');
-    font-display: swap;
 }
 
 
 @font-face {
     font-family: 'd';
     src: url('font/Junction-light.otf');
-    font-display: swap;
 }
 
 
@@ -36,6 +33,24 @@ body {
     min-height: 100vh;
     background: #000;
     height: auto;
+}
+
+.input1 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    opacity: 0%;
+    top: 0;
+    left: 0;
+}
+
+.input2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0%;
 }
 
 .wrapper {
@@ -181,10 +196,10 @@ body {
 
 
 .bulat {
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 400px;
-    top: 55%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -292,7 +307,7 @@ body {
 }
 
 .isi:hover {
-    font-size: 30px;
+
     color: salmon;
 }
 
@@ -345,6 +360,12 @@ body {
     }
 }
 
+@media (max-width:1237px) {
+    .bulat {
+        top: 53%;
+    }
+}
+
 @media (max-width: 900px) {
     .tanggal {
         font-size: 20px;
@@ -359,7 +380,7 @@ body {
     .bulat {
         width: 400px;
         height: 400px;
-        top: 57%;
+        top: 55%;
     }
 
     .isi {
@@ -387,7 +408,7 @@ body {
     .bulat {
         width: 300px;
         height: 300px;
-        top: 60%;
+        top: 54%;
     }
 
     .isi {
@@ -401,33 +422,7 @@ body {
     }
 }
 
-@media (max-height: 657px) {
-    .tanggal {
-        font-size: 17px;
-    }
 
-    .txtberjalan {
-        width: 75%;
-        top: 88%;
-        font-size: 49px;
-    }
-
-    .bulat {
-        width: 300px;
-        height: 300px;
-        top: 60%;
-    }
-
-    .isi {
-        font-family: 'd';
-        font-size: 30px;
-    }
-
-    .time {
-        top: 17%;
-        font-size: 100px;
-    }
-}
 
 @media (max-width:500px) {
     .tanggal {
@@ -443,7 +438,7 @@ body {
     .bulat {
         width: 290px;
         height: 290px;
-        top: 57%;
+        top: 49%;
     }
 
     .isi {
@@ -457,7 +452,7 @@ body {
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:375px) {
     .tanggal {
         top: 5%;
         font-size: 15px;
@@ -472,7 +467,7 @@ body {
     .bulat {
         width: 220px;
         height: 220px;
-        top: 52%;
+        top: 47%;
     }
 
     .isi {
