@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jam Zahran</title>
-    <meta Content='Jam zahran, jam animasi kotak zahran ' Name='description' />
-    <meta Content='Jam zahran, jam animasi kotak zahran website jam statis zahran' Name='keywords' />
-    <link rel="stylesheet" href="style.css">
+    <title>Zahran's Clock Animation</title>
+    <meta name="description" content="jam zahran, jam animmasi kotak zahran">
+    <meta name="keywords" content="zahran's clock animation, animasi zahran, website pribadi zahran, jam zahran , jam animasi kotak zahran , wesite jam statis zahran, good morning good afternoon , bermimmpilah dalam hidup jangan hidup dalam mimpi">
+    <link rel="stylesheet" href="style1.css">
 
 </head>
-<!-- <html><body> -->
 
 <BODy>
     <div class="wrapper">
-        <input type="button" value="" onclick="play()">
+
+       
+        <input class="input1" type="button" value="  " onclick="audio.play()">
+        <input class="input2" type="button" value="" onclick="audio.pause()">   
         <div class="tanggal">
             <h3 class="tgl"></h3>
         </div>
@@ -45,71 +47,67 @@
 
 
     <script>
-        const userP = prompt("Masukkan namamu : ");
-        let txt;
-        const user = document.getElementsByClassName('user')[0];
-
-        function startTime() {
+         const userP=prompt("Masukkan namamu : ");
+         let txt;
+         const user= document.getElementsByClassName('user')[0];
+              function startTime() {
             const today = new Date();
-            const y = today.getFullYear();
-            const mo = today.getMonth();
-            const d = today.getDate();
+            const y=today.getFullYear();
+            const mo= today.getMonth();
+            const d= today.getDate();
             let h = today.getHours();
             let m = today.getMinutes();
             let s = today.getSeconds();
-            const H = h;
-            const M = m;
-
+            const H=h;
+            const M=m;
             function checkTime(i) {
-                if (i < 10) {
-                    i = "0" + i;
-                }
-                return i;
+			if (i < 10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+            const month=["january",'February', "March", "April","May",'June','July','August',"September","October","November","December"];
+            if (M>0 && M<60) {
+                txt="'Bermimpilah dalam hidup, jangan hidup dalam mimpi.'";
+            }else if(M>2 && M<5){
+                txt="'Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa kamu tidak mengetahui apa-apa'\n~Socrates~";
+            }else if(M>4 && M<7){
+                txt="'Menaklukan rasa takut adalah awal dari kebjaksanaan'\n~Bertrand Russel~";
+            }else if(M>6 && M<9){
+                txt="'Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa kamu tidak mengetahui apa-apa'\n~Socrates~";
+            }else{
+                txt="'Bermimpilah dalam hidup, jangan hidup dalam mimpi.'";
             }
-            const month = ["january", 'February', "March", "April", "May", 'June', 'July', 'August', "September",
-                "October", "November", "December"
-            ];
-            if (M > 0 && M < 60) {
-                txt = "'Bermimpilah dalam hidup, jangan hidup dalam mimpi.'";
-            } else if (M > 2 && M < 5) {
-                txt =
-                    "'Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa kamu tidak mengetahui apa-apa'\n~Socrates~";
-            } else if (M > 4 && M < 7) {
-                txt = "'Menaklukan rasa takut adalah awal dari kebjaksanaan'\n~Bertrand Russel~";
-            } else if (M > 6 && M < 9) {
-                txt =
-                    "'Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa kamu tidak mengetahui apa-apa'\n~Socrates~";
-            } else {
-                txt = "'Bermimpilah dalam hidup, jangan hidup dalam mimpi.'";
-            }
-
-            if (H > 5 && H < 11) {
-                user.innerHTML = "Good Morning " + userP + " :)";
-            } else if (H > 10 && H < 17) {
-                user.innerHTML = "Good Afternoon " + userP + " :)";
-            } else if (H > 16 && H < 18) {
-                user.innerHTML = "Good Evening " + userP + " :)";
-
-            } else {
-                user.innerHTML = "Good Night " + userP + " :)";
-
-            }
-            h = checkTime(h);
-            m = checkTime(m);
-            s = checkTime(s);
-            document.getElementsByClassName('tgl')[0].innerHTML = d + ' ' + month[mo - 1] + " " + y;
-            document.getElementsByClassName('time')[0].innerHTML = h + ":" + m + ":" + s;
+            
+   if (H>5 && H<11){
+            user.innerHTML="Good Morning "+ userP+" :)" ;
+        }else if (H>10 && H<17) { 
+            user.innerHTML="Good Afternoon "+ userP+" :)" ;
+        }
+        else if(H>16 && H<18){
+            user.innerHTML="Good Evening "+ userP+" :)";
+            
+        }
+        else{
+            user.innerHTML="Good Night "+ userP+" :)";
+            
+        }
+        h=checkTime(h);
+        m = checkTime(m);
+			s = checkTime(s);
+        document.getElementsByClassName('tgl')[0].innerHTML=d +' '+ month[mo-1]+ " " + y;
+       document.getElementsByClassName('time')[0].innerHTML = h + ":" + m + ":" + s;
             t = setTimeout(function () {
                 startTime();
             }, 500);
-
+        
         }
         startTime();
 
-
+     
 
         let i = 0;
-
+           
         const speed = 50;
         const wrapper = document.getElementsByClassName('wrapper')[0];
 
@@ -122,8 +120,19 @@
             }
         }
         typeWriter();
-    </script>
-    <!-- </body></html> -->
-</body>
 
+
+        let audio = new Audio("Undertale OST- 023 - Shop [TRAP REMIX] (PROD. @Mai).mp3" ) ;
+        
+audio.oncanplaythrough = function(){
+audio.play();
+
+ }
+ audio.loop=true;
+  audio.onended = function(){
+ audio.pause();
+ }
+    </script>
+
+</body>
 </html>
