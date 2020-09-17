@@ -1,4 +1,4 @@
 # clock-animation
-make clock animation with html, css, js
+this is clock animation that I made with html, css, js
 
-You can open this website at https://zahran.xyz
+Link demo => https://zahran.xyz/clockAnimation
