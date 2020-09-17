@@ -46,7 +46,7 @@ const userP=prompt("Masukkan namamu : ");
         h=checkTime(h);
         m = checkTime(m);
 			s = checkTime(s);
-        document.getElementsByClassName('tgl')[0].innerHTML=d +' '+ month[mo-1]+ " " + y;
+        document.getElementsByClassName('tgl')[0].innerHTML=d +' '+ month[mo]+ " " + y;
        document.getElementsByClassName('time')[0].innerHTML = h + ":" + m + ":" + s;
             t = setTimeout(function () {
                 startTime();
