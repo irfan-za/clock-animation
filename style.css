@@ -552,9 +552,9 @@ html.changeOn {
 
     /* change color */
     .container-changeColor {
-        top: 90%;
+        /* top: 90%; */
         height: 30px;
-        right: -113px;
+        right: -111px;
     }
 
     .changeColor {
@@ -563,7 +563,7 @@ html.changeOn {
     }
 
     .sidebarMobile {
-        font-size: 8px;
+        font-size: 16px;
         margin: 0 0;
     }
 
@@ -602,9 +602,9 @@ html.changeOn {
 
     /* change color */
     .container-changeColor {
-        top: 83%;
+        /* top: 83%; */
         height: 30px;
-        right: -113px;
+        right: -95px;
     }
 
     .changeColor {
@@ -613,7 +613,7 @@ html.changeOn {
     }
 
     .sidebarMobile {
-        font-size: 8px;
+        font-size: 12px;
         margin: 0 0;
     }
 
